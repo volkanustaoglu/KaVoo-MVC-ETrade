@@ -1,0 +1,74 @@
+﻿@using KaVoo.Entity;
+@model Psikolog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+    <section class="inner-page">
+        <div class="container">
+            <div class="row">
+                <div class="profile-page">
+                    <div class="col-md-6">
+                        <div class="tab-content profile-tabs-content" id="myTabContent">
+                            <div id="profile-pic1" class="tab-pane fade in active">
+                                <img src="http://placehold.it/570x531" alt="" />
+                            </div>
+                            <div id="profile-pic2" class="tab-pane fade in">
+                                <img src="http://placehold.it/570x531" alt="" />
+                            </div>
+                            <div id="profile-pic3" class="tab-pane fade in">
+                                <img src="http://placehold.it/570x531" alt="" />
+                            </div>
+                        </div>
+
+
+                        <ul class="nav nav-tabs profile-tabs" id="myTab">
+                            <li class="active"><a data-toggle="tab" href="#profile-pic1"><img src="http://placehold.it/170x116" alt="" /></a></li>
+                            <li><a data-toggle="tab" href="#profile-pic2"><img src="http://placehold.it/170x116" alt="" /></a></li>
+                            <li><a data-toggle="tab" href="#profile-pic3"><img src="http://placehold.it/170x116" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h1><i class="icon-user"></i>@Model.Name</h1>
+                        <span class="designation">CHIEF EXECUTIVE OFFICER</span>
+                        <ul class="profile-info">
+                            <li>
+                                <span><i class="icon-lightbulb"></i>Experience:</span>
+                                <p>3 Years</p>
+                            </li>
+                            <li>
+                                <span><i class="icon-envelope"></i>Email:</span>
+                                <p>Info@lifelinetemplate.com</p>
+                            </li>
+                            <li>
+                                <span><i class="icon-phone"></i>Phone:</span>
+                                <p>(123) 000-1425</p>
+                            </li>
+                        </ul>
+                        <p>Aenean eros erat, tincidunt vitae fringilla nec, fermentum et quam. Class aptent tacit socio squ ad litora torquent per iubia nostra, per inceptos himenaeos. Ut eleif end, nisi se iporta mollis, odio urna auctor tellus, eu semper neque eravitae elitv. Quisque sapien dl posuere in congue a, euismod rhoncus turpis. Integer aliquet tellus a neque elementum ornareIsni. Nullam neque massa, sodales eu volutpat id, interdum ac nibh. Aenean eros erat, tincdunt vitae fringilla nec, ferme ntuim et quam. Class aptent taciti sociosqu ad litora torquent per con ubia nostra, per inceptos himenaeos. Aenean eros erat, tincidunt vitae fringilla niferm entum et quam. Class aptent tacit socio squ ad litora torquent per iubia nostra, per incitos himenaeos. Ut eleif end, nisi se iporta mollis, odio urna auctor tellus, eu semper neravitae elitv. Quisque sapien dl posuere in congue a, euismod rhoncus turpis.</p>
+                        <p>Integer aliquet tellus a neque elementum ornareIsni. Nullam neque massa, sodales euaeo volutpat id, interdum ac nibh. Aenean eros erat, tincdunt vitae fringilla nec, ferme ntuimuv et quam. Class aptent taciti sociosqu ad litora torquent per con ubia nostra, per inceptosvi himenaeos. Aenean eros erat, tincidunt vitae fringilla nec, fermentum et quam. Class oient tacit socio squ ad litora torquent per iubia nostra, per inceptos himenaeos. Ut eleif end, ui nisi se iporta mollis, odio urna auctor tellus, eu semper neque eravitae elitv. Quisq isapien dl posuere in congue a, euismod rhoncus turpis. Integer aliquet tellus a neque elementum ornareIsni. Nullam neque massa, sodales eu volutpat idurna auctor tellus, eu sei neravitae elitv. Quisque sapien dl posuere in congue a, euismod rhoncus turpis.</p>
+
+                    </div>
+
+                    <div class="join-team">
+                        <div class="col-md-12">
+                            <h2>Want To Join Our Team?</h2>
+                            <p>Aenean eros erat, tincidunt vitae fringilla nec, fermentum et quam. Class aptent tac  torquent per con ubia nostra, per inceptos himen. Ut eleif end, nisi sed porta mollis, odio urna auctor tellus, eu semper neque erat vitae elit. Quisque sapien congue a, euismod rhoncus turpis. Integer aliquet tellus a neque elementum ornare. Nullam neque massa, sodales eu volutpat id, interdum ac nibh.</p>
+                            @using (Html.BeginForm("AddToCart", "Cart"))
+                            {
+                                @Html.HiddenFor(i => i.Id)
+                                <button type="submit" class="btn btn-success">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    Randevu Al
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaVoo", "KaVoo\KaVoo.csproj", "{8070FB80-D472-4233-8283-320EB0AFFCAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8070FB80-D472-4233-8283-320EB0AFFCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8070FB80-D472-4233-8283-320EB0AFFCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8070FB80-D472-4233-8283-320EB0AFFCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8070FB80-D472-4233-8283-320EB0AFFCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {709815C7-29F6-4BF1-941E-4614A39A4ABC}
+	EndGlobalSection
+EndGlobal

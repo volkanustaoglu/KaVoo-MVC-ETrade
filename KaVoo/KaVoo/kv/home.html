@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Life Line</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,700italic,900,700,500italic,500,400italic,300italic,300,100italic,100|Open+Sans:400,300,400italic,300italic,600,600italic,700italic,700,800|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700' rel='stylesheet' type='text/css'>
+
+
+<!-- Styles -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="css/icons.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/sea-green.css" title="sea-green" />
+<link href="css/contact.css" rel="stylesheet" type="text/css" /> <!-- AJAX Contact Form Stylesheet -->
+
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="css/ie.css" />
+<script type="text/javascript" language="javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+<!-- Scripts -->
+<script src="js/jquery-2.2.2.js" type="text/javascript"></script>
+<script src="js/perfect-scrollbar.jquery.js" type="text/javascript"></script>
+<script src="js/perfect-scrollbar.js" type="text/javascript"></script>
+<script src='js/bootstrap.js'></script>
+<script src="js/html5lightbox.js"></script>
+<script src='js/script.js'></script>		
+<script defer src="js/jquery.flexslider.js"></script>
+<script defer src="js/jquery.mousewheel.js"></script>
+
+<script>
+$(window).load(function(){
+  $('.footer_carousel').flexslider({
+	animation: "slide",
+	animationLoop: false,
+	slideShow:false,
+	controlNav: true,	
+    maxItems: 1,
+	pausePlay: false,
+	mousewheel:true,
+	start: function(slider){
+	  $('body').removeClass('loading');
+	}
+	});
+
+  $('.client-reviews').flexslider({
+	animation: "fade",
+	animationLoop: true,
+	slideShow:true,
+	controlNav: false,	
+    maxItems: 1,
+	pausePlay: false,
+	mousewheel:true,
+	start: function(slider){
+	  $('body').removeClass('loading');
+	}
+	});  
+});
+</script>
+	
+<!-- Scripts For Layer Slider  -->
+<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+<!-- LayerSlider script files -->
+<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+jQuery("#layerslider").layerSlider({
+	responsive: true,
+	responsiveUnder: 1280,
+	layersContainer: 1170,
+	skin: 'fullwidth',
+	hoverPrevNext: true,
+	skinsPath: 'layerslider/skins/'
+});
+});
+</script>
+
+</head>
+<body>
+<div class="theme-layout">
+
+<div id="top-bar" class="modern">
+	<div class="container">
+		<ul>
+
+			<li>
+				<i class="icon-phone"></i>
+				(123) 456-7890
+			</li>
+			<li>
+				<i class="icon-envelope"></i>
+				contact@companymail.com
+			</li>
+		</ul> 
+		<div class="header-social">
+			<ul>
+				<li><a href="#" title=""><i class="icon-google-plus"></i></a></li>
+				<li><a href="#" title=""><i class="icon-facebook"></i></a></li>
+				<li><a href="#" title=""><i class="icon-skype"></i></a></li>
+				<li><a href="#" title=""><i class="icon-linkedin"></i></a></li>
+				<li><a href="#" title=""><i class="icon-twitter"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div><!--top bar-->
+
+<header class="header2 sticky">
+	<div class="container">
+		<div class="logo">
+			<a href="#" title=""><img src="images/logo.png" alt="Logo" /><h1><i>L</i>ifeline</h1></a>
+		</div><!-- Logo -->
+		
+		<a class="header-btn" href="file:///C:/Users/Kaan/Desktop/Lifeline%20HTML%20Ver%203/HTML%20FILES/index11.html#" title="">GİRİŞ YAP</a>
+		
+		<nav class="menu">
+			<ul id="menu-navigation">
+				<li><a href="index11.html"><i class="icon-circle"></i>ANA SAYFA</a>
+					
+									
+				</li>
+				<li><a href="about.html"><i class="icon-circle"></i>HAKKIMIZDA</a>
+					
+				</li>
+				<li><a href="causes3.html"><i class="icon-circle"></i>PSİKOLOGLAR</a>
+					
+				</li>
+				<li><a href="blog-without-sidebar.html"><i class="icon-circle"></i>BLOG</a>
+					
+				</li>
+				<li><a href="contact.html"><i class="icon-circle"></i>İLETİŞİM</a>
+					
+				</li>
+				
+			</ul>   
+		</nav><!-- Menu -->
+
+
+
+	</div>		
+</header><!--header-->
+
+<div class="responsive-header">	
+	<div class="responsive-topbar">		
+		<div class="responsive-topbar-info">
+			<ul>
+				<li><i class="fa fa-home"></i> Go to Home</li>
+				<li><i class="fa fa-phone"></i> (031) 6565001</li>
+				<li><i class="fa fa-envelope"></i> Contact@companymail.com</li>
+			</ul>
+			<div class="container">
+				<div class="responsive-socialbtns">
+					<ul>
+						<li><a href="#" title=""><i class="fa fa-rss"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" title=""><i class="fa fa-pinterest-p"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="responsive-logomenu">
+		<div class="container">
+			<a href="index.html" title=""><img src="images/responsivelogo.png" alt="Logo" /></a>
+			<span class="menu-btn"><i class="fa fa-th-list"></i></span>
+		</div>
+	</div>
+	
+	<button class="responsive-donate">Giriş Yap</button>
+</div><!--Responsive header-->
+
+<div id="layerslider-container-fw">
+
+	<div id="layerslider" style="width: 100%; height: 530px; margin: 0px auto; ">
+	
+
+		 <div class="ls-slide" data-ls="transition3d:63;timeshift:-1000;">			
+			<img src="http://placehold.it/1366x640" class="ls-bg" alt="Slide background">
+			<h3 class="ls-l slide5" style="top:80px; left:670px; font-family:open sans; font-size:36px; font-weight:700; color:#FFF;"  data-ls="offsetxin:0;offsetyin:top;durationin:750;delayin:1000;easingin:easeOutQuart;fadein:false;offsetxout:right;durationout:1000;easingout:easeInQuart;fadeout:false;">Supporting <span>889</span> People</h3>
+			<i class="ls-l slide5" style="top:130px; left:760px; font-family:open sans; font-size:20px; color:#FFF;"  data-ls="offsetxin:0;offsetyin:top;durationin:750;delayin:500;easingin:easeOutQuart;fadein:false;offsetxout:right;durationout:1000;easingout:easeInQuart;fadeout:false;">fundraising & charity...</i>
+			<h4 class="ls-l slide5-title" style="top:160px; left:560px; font-family:open sans; font-size:70px; font-weight:700; color:#FFF; line-height:55px; padding:50px 80px 80px; background:url(images/slider5-bg.png) no-repeat scroll 0 0 / 100% 100% transparent;" data-ls="offsetxin:0;offsetyin:0;durationin:1000;delayin:1400;easingin:easeOutQuart;fadein:false;easingout:easeInQuart;rotatexin:-90deg;">KAYIT <span>E</span>KRANI</h4>
+			<span class="ls-l" style="top:280px; left:710px; font-family:open sans; font-size:18px; font-weight:400; color:#FFF; letter-spacing:3px;" data-ls="offsetxin:0;offsetyin:0;durationin:1000;delayin:1700;easingin:easeOutQuart;fadein:false;easingout:easeInQuart;rotatexin:-90deg;">DONATE FOR NEEDY PEOPLE</span>
+			<a class="ls-l slide-donate" style="top:350px; left:770px; font-family:open sans; font-size:12px; font-weight:400; color:#FFF; padding:10px 20px; border-radius:3px;"  data-ls="offsetxin:0;offsetyin:700;durationin:1000;delayin:2000;easingin:easeOutQuart;fadein:false;easingout:easeInQuart;rotatexin:-90deg;" href="#" title=""><i class="icon-heart"></i> KAYIT OL</a>
+		</div><!-- Slide -->
+
+
+	</div>
+</div><!-- Layer Slider -->			
+
+
+
+<section class="block remove-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="sec-title">
+					<h2>ONLİNE <span>PSİKOLOGLAR</span></h2>
+				</div>
+				<div class="remove-ext">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="our-cause">
+								<div class="our-cause-img">
+									<img src="http://placehold.it/370x206" alt="" />
+									<a href="#" title=""><i class="icon-link"></i></a>
+								</div>
+								<div class="our-cause-detail">
+									<h3>Patient Care Programme</h3>
+									<span>in <a href="#" title="">South Africa</a></span>
+									<p>Lorem ipsum dolor sit amet, consectetu pisei ing elit. Pellentesque mi tellus, fringilla intedidum vitae, tempor id lorem. Nunc aliquettndunt conse iquat. Lorem ipsum dolor.</p>
+									<i>Help Us: <span>$</span> <strong>20,000</strong></i>
+									<a href="#" title="">DONATE NOW</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="our-cause">
+								<div class="our-cause-img">
+									<img src="http://placehold.it/370x206" alt="" />
+									<a href="#" title=""><i class="icon-link"></i></a>
+								</div>
+								<div class="our-cause-detail">
+									<h3>Patient Care Programme</h3>
+									<span>in <a href="#" title="">South Africa</a></span>
+									<p>Lorem ipsum dolor sit amet, consectetu pisei ing elit. Pellentesque mi tellus, fringilla intedidum vitae, tempor id lorem. Nunc aliquettndunt conse iquat. Lorem ipsum dolor.</p>
+									<i>Help Us: <span>$</span> <strong>20,000</strong></i>
+									<a href="#" title="">DONATE NOW</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4">
+							<div class="our-cause">
+								<div class="our-cause-img">
+									<img src="http://placehold.it/370x206" alt="" />
+									<a href="#" title=""><i class="icon-link"></i></a>
+								</div>
+								<div class="our-cause-detail">
+									<h3>Patient Care Programme</h3>
+									<span>in <a href="#" title="">South Africa</a></span>
+									<p>Lorem ipsum dolor sit amet, consectetu pisei ing elit. Pellentesque mi tellus, fringilla intedidum vitae, tempor id lorem. Nunc aliquettndunt conse iquat. Lorem ipsum dolor.</p>
+									<i>Help Us: <span>$</span> <strong>20,000</strong></i>
+									<a href="#" title="">DONATE NOW</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="block remove-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="client-reviews">
+					<ul class="slides">
+						<li>
+							<div class="reviews effect5">
+								<h3><span>"</span>Artık bir durumu değiştirme imkanımız olmadığı zaman, kendimizi değiştirmek zorundayız demektir.<span>" –Viktor Frankl</span></h3>
+							</div>
+						</li>
+						<li>
+							<div class="reviews effect5">
+								<h3><span>"</span>Bir gün dönüp geçmişe baktığınızda, mücadelelerle geçen yılların hayatınızın en güzel yılları olduğunu fark edeceksiniz.<span>" -Sigmund Freud</span></h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-widget-title">
+					<h4><strong><span>P</span>eople</strong> Reviews</h4>
+				</div>
+				<div class="footer_carousel">
+					<ul class="slides">
+						<li>
+							<div class="review">
+								<i>L</i><p><span>ifeline</span> is clean and modern responsive Template built with HTML5 & CSS3 coding and easy to use Shortcodes with load of features in it. We have implemented many features in this theme which makes your project easier and better than before and can be used for multipurpose. </p>
+							</div>						
+							<div class="from">
+								<h6>Thoms gomz britian</h6>
+								<span>CE0, Australia</span>
+							</div>
+						</li>
+						<li>
+							<div class="review">
+								<i>L</i><p><span>ifeline</span> is clean and modern responsive Template built with HTML5 & CSS3 coding and easy to use Shortcodes with load of features in it. We have implemented many features in this theme which makes your project easier and better than before and can be used for multipurpose. </p>
+							</div>						
+							<div class="from">
+								<h6>Thoms gomz britian</h6>
+								<span>CE0, Australia</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div><!-- Reviews Widget -->
+			<div class="col-md-3">
+				<div class="footer-widget-title">
+					<h4><strong><span>F</span>lickr</strong> Feed</h4>
+				</div>
+				<div class="flickr-images">
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+					<a href="#" title=""><img src="http://placehold.it/77x75" alt="" /></a>
+				</div>
+			</div><!-- Flickr Widget -->
+			<div class="col-md-3">
+				<div class="footer-widget-title">
+					<h4><strong><span>C</span>ontact</strong> Us</h4>
+				</div>
+				<ul class="contact-details">
+					<li>
+						<span><i class="icon-home"></i>ADDRESS</span>
+						<p>#8901 Marmora Road Chi Minh City, Vietnam</p>
+					</li>
+					<li>
+						<span><i class="icon-phone-sign"></i>PHONE NO</span>
+						<p>+00 035 835 282 / +00 034 965 353</p>
+					</li>
+					<li>
+						<span><i class="icon-envelope-alt"></i>EMAIL ID</span>
+						<p>#8901 Marmora Road Chi Minh City, Vietnam</p>
+					</li>
+					<li>
+						<span><i class="icon-link"></i>WEB ADDRESS</span>
+						<p>http://www.yourwebsite.com</p>
+					</li>
+				</ul>
+			</div><!-- Contact Us Widget -->
+			<div class="col-md-3">
+				<div class="newsletter">
+					<h4><strong>SIGNUP</strong> NEWSLETTER</h4>
+					<p>Quisque volutpat mattis eros. Nullamma lesuada erat ut turpis. Suspendisse.</p>
+					<input class="form-control" type="email" placeholder="Email" />
+				</div>
+				<ul class="social-bar">
+					<li><a href="#" title=""><img src="images/rss.jpg" alt="" /></a></li>
+					<li><a href="#" title=""><img src="images/facebook.jpg" alt="" /></a></li>
+					<li><a href="#" title=""><img src="images/gplus.jpg" alt="" /></a></li>
+					<li><a href="#" title=""><img src="images/linked-in.jpg" alt="" /></a></li>
+					<li><a href="#" title=""><img src="images/pinterest.jpg" alt="" /></a></li>
+				</ul>
+				<div class="newsletter-btn">
+					<input type="button" value="Submit" />
+				</div>
+			</div>	<!-- News Letter SignUp -->		
+		</div>
+	</div>
+</footer><!-- Footer -->
+
+
+<div class="footer-bottom">
+	<div class="container">
+		<p>Copyright © 2013 Global News. <span>All rights reserved.</span> </p>
+		<ul>
+			<li><a href="index11.html" title="">HOME</a></li>
+			<li><a href="about.html" title="">HAKKIMIZDA</a></li>
+			<li><a href="causes3.html" title="">PSİKOLOGLAR</a></li>
+			<li><a href="blog-without-sidebar.html" title="">BLOG</a></li>
+			<li><a href="contact.html" title="">İLETİŞİM</a></li>
+		</ul>
+	
+	</div>
+</div><!-- Bottom Footer Strip -->
+
+
+</body>
+</html>

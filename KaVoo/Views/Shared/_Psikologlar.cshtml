@@ -1,0 +1,44 @@
+﻿@using KaVoo.Models;
+@model IEnumerable<PsikologModel>
+@{
+    ViewBag.Title = "Psikologlar";
+}
+
+  
+
+<section class="inner-page">
+    <div class="container">
+
+        <div class="remove-ext">
+            <div class="row">
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+
+                        <div class="our-cause">
+                            <div class="our-cause-img">
+                                <img alt="" src="/Upload/@item.Image">
+                                <a title="" href="single-causes.html"><i class="icon-link"></i></a>
+                            </div>
+                            <div class="our-cause-detail">
+                                <a href="Home/Details/@item.Id"><h3>@item.Name</h3></a>
+                                <span>in <a title="" href="#">South Africa</a></span>
+                                <p>@item.Description</p>
+                                <i>Help Us: <strong>@item.Price</strong><span>TL</span></i>
+                                <a title="" href="/Home/Details/@item.Id">Profil</a>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</section>

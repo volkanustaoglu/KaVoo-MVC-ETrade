@@ -1,0 +1,102 @@
+﻿@using KaVoo.Models;
+@model IEnumerable<PsikologModel>
+@{
+    ViewBag.Title = "List";
+}
+
+<section class="inner-page">
+    <div class="container">
+        
+        <div class="row">
+            <div class="left-content col-md-9">
+                @if (Model.Count() == 0)
+                {
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        Bu kategoride bir psikolog bulunamadı.
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                        <strong>@Model.Count() adet</strong> psikolog bulundu.
+                    </div>
+                }
+
+              
+                @Html.Partial("_Psikologlar", Model)
+
+            </div>
+
+            <div class="sidebar col-md-3 pull-right">
+               
+                    @Html.Action("GetCategories", "Home")
+               
+                <div class="sidebar-widget">
+                    <div class="sidebar-title">
+                        <h4>Popular <span>Posts</span></h4>
+                    </div>
+                    <div class="popular-post">
+                        <img src="http://placehold.it/270x103" alt="" />
+                        <div class="popular-post-title">
+                            <h6><a href="#" title="">Quisque Sit Amet Unte</a></h6>
+                            <span>May 3,2013 / 02 comments</span>
+                        </div>
+                    </div>
+                    <div class="popular-post">
+                        <img src="http://placehold.it/270x103" alt="" />
+                        <div class="popular-post-title">
+                            <h6><a href="#" title="">Quisque Sit Amet Unte</a></h6>
+                            <span>May 3,2013 / 02 comments</span>
+                        </div>
+                    </div>
+
+                </div><!-- Popular Posts -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-title">
+                        <h4>Meta <span>Data</span></h4>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li><a href="#" title="">Blog</a></li>
+                        <li><a href="#" title="">Creative</a></li>
+                        <li><a href="#" title="">Powerful</a></li>
+                        <li><a href="#" title="">Clean</a></li>
+                    </ul>
+                </div><!-- Meta Data -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-title">
+                        <h4>Tags <span>Clouds</span></h4>
+                    </div>
+                    <div class="cloud-tags">
+                        <a href="#" title="">Uncategorized</a>
+                        <a href="#" title="">Susipit</a>
+                        <a href="#" title="">Diam</a>
+                        <a href="#" title="">Diam</a>
+                        <a href="#" title="">Susipit</a>
+                        <a href="#" title="">Diam</a>
+                        <a href="#" title="">Susipit</a>
+                        <a href="#" title="">Uncategorized</a>
+                        <a href="#" title="">Susipit</a>
+                    </div>
+                </div><!-- Tags Clouds -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-title">
+                        <h4>Category <span>List</span></h4>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li><a href="#" title="">Blog (6)</a></li>
+                        <li><a href="#" title="">Colourful (5)</a></li>
+                        <li><a href="#" title="">Feature (2)</a></li>
+                        <li><a href="#" title="">Nature (7)</a></li>
+                        <li><a href="#" title="">Scenery(3)</a></li>
+                        <li><a href="#" title="">Uncategorized(1)</a></li>
+                    </ul>
+                </div><!-- Category List -->
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
